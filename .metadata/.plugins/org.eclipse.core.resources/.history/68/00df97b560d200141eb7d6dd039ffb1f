@@ -52,7 +52,7 @@ public class TestPrimeFactor {
 //	}
 	@Test
 	public void test32511(){
-		Integer[] list = {5,7,7,1327};
+		Integer[] list = {5,7,7,132};
 		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
 		assertEquals(Prime.primeFactorizationOf(32511), expected);
 	}
