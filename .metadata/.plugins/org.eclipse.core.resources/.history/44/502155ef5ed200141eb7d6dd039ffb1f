@@ -26,5 +26,6 @@ public class TestPrimeFactor {
 		Integer[] list = {3};
 		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
 		assertEquals(Prime.primeFactorizationOf(3), expected);
+		
 	}
 }

@@ -20,11 +20,4 @@ public class TestPrimeFactor {
 		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
 		assertEquals(Prime.primeFactorizationOf(2), expected);
 	}
-	
-	@Test
-	public void test3(){
-		Integer[] list = {3};
-		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
-		assertEquals(Prime.primeFactorizationOf(3), expected);
-	}
 }
