@@ -38,17 +38,10 @@ public class TestPrimeFactor {
 //		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
 //		assertEquals(Prime.primeFactorizationOf(6), expected);
 //	}
-//	@Test
-//	public void test8(){
-//		Integer[] list = {2,2,2};
-//		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
-//		assertEquals(Prime.primeFactorizationOf(8), expected);
-//	}
 	@Test
-	public void test9(){
-		Integer[] list = {3,3};
+	public void test8(){
+		Integer[] list = {2,2,2};
 		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
-		assertEquals(Prime.primeFactorizationOf(9), expected);
+		assertEquals(Prime.primeFactorizationOf(8), expected);
 	}
 }
-
