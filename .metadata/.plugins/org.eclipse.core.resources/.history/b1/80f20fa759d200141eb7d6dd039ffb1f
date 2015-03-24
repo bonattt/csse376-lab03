@@ -1,0 +1,10 @@
+package primeFactorization;
+
+public class Prime {
+	
+	public static int[] primeFactorizationOf(int i){
+		int[] factors = new int[1];
+		
+		return
+	}
+}

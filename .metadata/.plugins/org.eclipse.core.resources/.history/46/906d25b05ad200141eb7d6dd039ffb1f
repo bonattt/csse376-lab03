@@ -11,7 +11,9 @@ public class TestPrimeFactor {
 	@Test
 	public void test1() {
 		ArrayList<Integer> expected = new ArrayList<Integer>();
-		assertEquals(Prime.primeFactorizationOf(1), expected);		
+		assertEquals(Prime.primeFactorizationOf(1), expected);
+		
+		
 	}
 
 }

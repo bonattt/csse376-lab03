@@ -1,0 +1,10 @@
+package primeFactorization;
+
+public class Prime {
+	
+	public static ArrayList<Integer>[] primeFactorizationOf(int i){
+		int[] factors = new int[1];
+		factors[0] = -99999;
+		return factors;
+	}
+}

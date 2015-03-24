@@ -1,0 +1,9 @@
+package primeFactorization;
+
+public class Prime {
+	
+	public static int[] primeFactorizationOf(int i){
+		
+		return {};
+	}
+}
