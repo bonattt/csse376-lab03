@@ -1,16 +1,11 @@
 package primeFactorization;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class Prime {
 	
 	public static ArrayList<Integer> primeFactorizationOf(int i){
 		ArrayList<Integer> factors = new ArrayList<Integer>();
-		if (i == 32511){
-			Integer[] list = {5,7,7,1327};
-			return new ArrayList<Integer>(Arrays.asList(list));
-		}
 		while (i%2 == 0){
 			factors.add(2);
 			i= i/2;
