@@ -22,11 +22,11 @@ public class Generator {
 		}
 		
 		// general version
-//		for (int i = n-1; i > 1; i--){
-//			if (isPrime(i)){
-//				list.add(i);
-//			}
-//		}
+		for (int i = n-1; i > 1; i--){
+			if (isPrime(i)){
+				list.add(i);
+			}
+		}
 		
 		return list;
 	}

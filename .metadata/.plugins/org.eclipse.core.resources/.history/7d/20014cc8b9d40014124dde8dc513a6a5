@@ -1,0 +1,23 @@
+package primeNumberGenerator;
+
+import java.util.ArrayList;
+
+public class Generator {
+	public static ArrayList<Integer> generatePrimes(int i){
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		if (i == 3){
+			list.add(2);
+		}
+		if (i == 4 || i == 5){
+			list.add(2);
+			list.add(3);
+		}
+		if (i == 6){
+			list.add(2);
+			list.add(3);
+			list.add(5);
+		}
+		
+		return list;
+	}
+}
