@@ -8,9 +8,8 @@ public class Generator {
 		if (i == 3){
 			list.add(2);
 		}
-		if (i == 4){
-			list.add(2);
-			list.add(3);
+		if (i = 4){
+			
 		}
 		
 		return list;
