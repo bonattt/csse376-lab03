@@ -1,0 +1,61 @@
+package primeFactorization;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
+import org.junit.Test;
+
+public class TestPrimeFactor {
+
+	@Test
+	public void test1() {
+		ArrayList<Integer> expected = new ArrayList<Integer>();
+		assertEquals(Prime.primeFactorizationOf(1), expected);		
+	}
+	@Test
+	public void test2() {
+		Integer[] list = {2};
+		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
+		assertEquals(Prime.primeFactorizationOf(2), expected);
+	}
+	@Test
+	public void test3(){
+		Integer[] list = {3};
+		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
+		assertEquals(Prime.primeFactorizationOf(3), expected);
+	}
+//	@Test
+	public void test4(){
+		Integer[] list = {2,2};
+		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
+		assertEquals(Prime.primeFactorizationOf(4), expected);
+	}
+//	@Test
+//	public void test6(){
+//		Integer[] list = {2,3};
+//		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
+//		assertEquals(Prime.primeFactorizationOf(6), expected);
+//	}
+//	@Test
+//	public void test8(){
+//		Integer[] list = {2,2,2};
+//		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
+//		assertEquals(Prime.primeFactorizationOf(8), expected);
+//	}
+//	@Test
+//	public void test9(){
+//		Integer[] list = {3,3};
+//		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
+//		assertEquals(Prime.primeFactorizationOf(9), expected);
+//	}
+	
+//	@Test
+	public void test325115(){
+		Integer[] list = {1327,7,7,5};
+		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
+		assertEquals(Prime.primeFactorizationOf(325115), expected);
+	}
+}
+

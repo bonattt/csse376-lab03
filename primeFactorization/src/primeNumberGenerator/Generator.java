@@ -33,7 +33,8 @@ public class Generator {
 	
 	public static boolean isPrime(int n){
 		for (int i = 2; i <= (n/2); i++){
-			if (n%i == 0){
+			int q = n%i;
+			if (q == 0){
 				return false;
 			}
 		}

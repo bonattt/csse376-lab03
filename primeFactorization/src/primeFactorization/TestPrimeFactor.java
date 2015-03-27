@@ -50,11 +50,12 @@ public class TestPrimeFactor {
 //		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
 //		assertEquals(Prime.primeFactorizationOf(9), expected);
 //	}
+	
 	@Test
-	public void test32511(){
-		Integer[] list = {5,7,7,1327};
+	public void test325115(){
+		Integer[] list = {1327,7,7,5};
 		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(list));
-		assertEquals(Prime.primeFactorizationOf(32511), expected);
+		assertEquals(Prime.primeFactorizationOf(325115), expected);
 	}
 }
 

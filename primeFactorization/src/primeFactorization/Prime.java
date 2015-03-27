@@ -2,21 +2,38 @@ package primeFactorization;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import primeNumberGenerator.Generator;
 
 public class Prime {
 	
-	public static ArrayList<Integer> primeFactorizationOf(int i){
+	public static ArrayList<Integer> primeFactorizationOf(int n){
 		ArrayList<Integer> factors = new ArrayList<Integer>();
-		if (i == 32511){
+		ArrayList<Integer> pNumbs = Generator.generatePrimes(n);
+		for (int i = 0; i < pNumbs.size(); i++){
+			while(n % pNumbs.get(i) == 0){
+				n = n / pNumbs.get(i);
+				factors.add(pNumbs.get(i));
+			}
+		}
+		if (n != 1){
+			factors.add(n);
+		}
+		
+		return factors;
+	}
+	
+	public static ArrayList<Integer> hardCodeSolution(int n){
+		ArrayList<Integer> factors = new ArrayList<Integer>();
+		if (n == 32511){
 			Integer[] list = {5,7,7,1327};
 			return new ArrayList<Integer>(Arrays.asList(list));
 		}
-		while (i%2 == 0){
+		while (n%2 == 0){
 			factors.add(2);
-			i= i/2;
-		} while (i%3 == 0) {
+			n= n/2;
+		} while (n%3 == 0) {
 			factors.add(3);
-			i = i/3;
+			n = n/3;
 		}
 		return factors;
 	}
