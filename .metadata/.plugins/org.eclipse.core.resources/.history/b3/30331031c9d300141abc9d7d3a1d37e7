@@ -1,0 +1,8 @@
+package primeNumberGenerator;
+
+public class Generator {
+	public static int generatePrime(int i){
+		
+		return -1;
+	}
+}

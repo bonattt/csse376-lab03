@@ -1,0 +1,4 @@
+package primeNumberGenerator;
+
+public class TestGenerator {
+}

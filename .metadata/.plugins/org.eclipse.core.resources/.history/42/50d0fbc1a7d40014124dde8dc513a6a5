@@ -1,0 +1,41 @@
+package primeNumberGenerator;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.*;
+import org.junit.runners.*;
+
+public class TestGenerator {
+	
+	int testInput, testExpected;
+	
+	@Parameterized.Parameters
+	public static Collection<Object[]> primeNumbers(){
+
+		Integer[] p1 = {};
+		Integer[] p2 = {};
+		Integer[] p3 = {2};
+		Integer[] p4 = {2,3};
+		Integer[] p5 = {2,3};
+		return Arrays.asList(new Object [][]  {
+				{1, new ArrayList<Integer>(Arrays.asList(p1))},
+				{2, new ArrayList<Integer>(Arrays.asList(p1))},
+				{3, new ArrayList<Integer>(Arrays.asList(p1))},
+				{4, new ArrayList<Integer>(Arrays.asList(p1))},
+				{5, new ArrayList<Integer>(Arrays.asList(p1))}
+		});
+	}
+	
+	public TestGenerator (int input, int expected) {
+		testInput = input;
+		testExpected = expected;
+	}
+	
+	@Test
+	public void actualTest(){
+		assertEquals(testExpected, Generator.generatePrimes(testInput));
+	}
+	
+}

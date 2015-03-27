@@ -1,0 +1,32 @@
+package primeNumberGenerator;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.*;
+import org.junit.runners.*;
+
+public class TestGenerator {
+	
+	
+	@Parameterized.Parameters
+	public static Collection<Object[]> primeNumbers(){
+		return Arrays.asList(new Object [][]  {
+				{1},
+				{2},
+				{3, 2},
+				{4, 3, 2},
+				{5, 3, 2}
+		});
+	}
+	
+	public TestGenerator (int input, int expected) {
+		
+	}
+	
+	@Test
+	public void actualTest(){
+		assertEquals(, Generator.generatePrimes(i));
+	}
+	
+}

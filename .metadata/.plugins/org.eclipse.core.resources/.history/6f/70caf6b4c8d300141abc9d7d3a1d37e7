@@ -1,0 +1,29 @@
+package primeNumberGenerator;
+
+import java.util.Arrays;
+import java.util.Collection;
+
+import org.junit.*;
+import org.junit.runners.*;
+
+public class TestGenerator {
+	
+	Generator primeGen;
+	
+	@Before
+	   public void initialize() {
+	      primeGen = new Generator();
+	}
+	
+	@Parameterized.Parameters
+	public static Collection primeNumbers(){
+		return Arrays.asList(new Object [][]  {
+				{2, true},
+				{6, false},
+				{19, true},
+				{22, false},
+				{23, true}
+		});
+	}
+	
+}

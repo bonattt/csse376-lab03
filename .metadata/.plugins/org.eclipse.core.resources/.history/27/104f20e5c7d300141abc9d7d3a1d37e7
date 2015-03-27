@@ -1,0 +1,14 @@
+package primeNumberGenerator;
+
+import java.util.Arrays;
+
+public class TestGenerator {
+	
+	public static Collection primeNumbers(){
+		return Arrays.asList(new Object [][]  {
+				{2, true},
+				{3, true}
+		});
+	}
+	
+}
