@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestGenerator" project="primeFactorization" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="primeNumberGenerator.TestGenerator" time="0.001">
+    <testsuite name="[0]" time="0.0">
+      <testcase name="actualTest[0]" classname="primeNumberGenerator.TestGenerator" time="0.0"/>
+    </testsuite>
+    <testsuite name="[1]" time="0.0">
+      <testcase name="actualTest[1]" classname="primeNumberGenerator.TestGenerator" time="0.0"/>
+    </testsuite>
+    <testsuite name="[2]" time="0.001">
+      <testcase name="actualTest[2]" classname="primeNumberGenerator.TestGenerator" time="0.001"/>
+    </testsuite>
+    <testsuite name="[3]" time="0.0">
+      <testcase name="actualTest[3]" classname="primeNumberGenerator.TestGenerator" time="0.0"/>
+    </testsuite>
+    <testsuite name="[4]" time="0.0">
+      <testcase name="actualTest[4]" classname="primeNumberGenerator.TestGenerator" time="0.0"/>
+    </testsuite>
+    <testsuite name="[5]" time="0.0">
+      <testcase name="actualTest[5]" classname="primeNumberGenerator.TestGenerator" time="0.0"/>
+    </testsuite>
+  </testsuite>
+</testrun>
